@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #131921;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF9900;
+            text-decoration: none;
+        }
+
+        header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+
+        header .search-bar input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        header .search-bar button {
+            padding: 8px 12px;
+            background-color: #febd69;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        header .nav-links a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #232f3e;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .product-card p {
+            color: #b12704;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            padding: 8px 12px;
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #131921;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Amazon</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button>Search</button>
+        </div>
+        <div class="nav-links">
+            <a href="#">Sign In</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">All</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Books</a>
+        <a href="#">Toys</a>
+        <a href="#">Home & Kitchen</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Product+1" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Product+2" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Product+3" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Product+4" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Amazon Clone. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
